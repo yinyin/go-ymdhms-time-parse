@@ -34,3 +34,11 @@ func TestParse19970520010203(t *testing.T) {
 	doParseTest(t, "97-05-20 1;2:3", 1997, 5, 20, 1, 2, 3)
 	doParseTest(t, "97-05-20 T 1;2:3", 1997, 5, 20, 1, 2, 3)
 }
+
+func TestParse18860101(t *testing.T) {
+	doParseTest(t, "18860101010203", 1886, 1, 1, 1, 2, 3)
+}
+
+func TestParse18000101(t *testing.T) {
+	doParseTest(t, "18000101010203", 1800, 1, 1, 1, 2, 3)
+}
